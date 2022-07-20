@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LuxTravel</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="css/air-datepicker.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+   <div class="wrapper">
+      <div class="btn__up">
+         <svg class="btn__up-img" width="100" height="120" viewBox="0 0 100 120" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_118_2305)">
+               <circle cx="40" cy="56" r="20" fill="white" />
+            </g>
+            <path opacity="0.9" d="M46 58L39.85 53L34 58" stroke="#fff" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" />
+            <defs>
+               <filter id="filter0_d_118_2305" x="-20" y="0" width="120" height="120" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                     result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="20" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix"
+                     values="0 0 0 0 0.0196078 0 0 0 0 0.0745098 0 0 0 0 0.207843 0 0 0 0.1 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_118_2305" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_118_2305" result="shape" />
+               </filter>
+            </defs>
+         </svg>
+      </div>
+
+      <header class="header">
+         <div class="header__inner">
+            <div class="header__top">
+               <div class="container">
+                  <div class="header__top-inner">
+                     <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="логотип">
+                     </a>
+                     <nav class="menu">
+                        <ul class="menu__list">
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#" data-hover-link="Главная">Главная</a>
+                           </li>
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#" data-hover-link="Аренда">Аренда яхт</a>
+                           </li>
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#" data-hover-link="Маршруты">Маршруты</a>
+                           </li>
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#" data-hover-link="услуги">доп. услуги</a>
+                           </li>
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#" data-hover-link="Контакты">Контакты</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <a class="mobile-header__phone" href="tel:88888888888">
+                        <img class="mobile-phone__img" src="images/icons/phone-mobile.svg" alt="">
+                     </a>
+                     <a class="header__phone" href="tel:78888888888" data-hover-link="телефон">
+                        <svg class="header__phone-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.03746 0.0599865C3.89701 0.267665 2.90596 0.885774 2.03497 1.93251C0.984772 3.19462 0.373588 4.70667 0.108908 6.69748C0.00313839 7.49296 -0.0340238 9.00871 0.0352394 9.69915C0.347673 12.8116 1.97667 15.8234 4.9831 18.8468C7.84702 21.7268 10.6429 23.3619 13.6137 23.8941C14.1423 23.9889 14.3625 24.0016 15.4335 23.9998C16.7405 23.9976 17.4218 23.9333 18.3624 23.7233C20.8564 23.1665 22.9244 21.6798 23.6578 19.9165C24.3669 18.2118 23.8685 16.3409 22.416 15.2558C22.0438 14.9777 20.4461 14.1069 19.9323 13.902C18.7351 13.4248 17.7904 13.4684 16.9398 14.0399C16.7057 14.1972 16.2674 14.6183 15.4817 15.441C14.8638 16.0878 14.3459 16.6171 14.3309 16.6171C14.3159 16.6171 14.118 16.5422 13.8912 16.4506C11.6512 15.5467 9.99769 14.2143 8.7428 12.3022C8.39705 11.7753 7.71323 10.4371 7.56205 9.99148L7.47034 9.72105L7.869 9.31141C9.97206 7.15073 10.0785 7.02236 10.2685 6.41804C10.3536 6.14733 10.3713 5.98622 10.3667 5.52495C10.3605 4.90529 10.2703 4.51756 9.9625 3.78764C9.75659 3.29935 8.94019 1.84734 8.6847 1.51491C8.17623 0.853412 7.42952 0.353118 6.6233 0.133715C6.29357 0.0439932 5.36297 0.000703516 5.03746 0.0599865ZM12.7389 0.93502V1.87009L13.4301 1.92651C15.7571 2.11655 17.7154 3.01902 19.3494 4.65437C20.9834 6.28972 21.8852 8.24967 22.0751 10.5785L22.1314 11.2703H23.0657H24L23.9681 10.6958C23.7575 6.90281 21.7548 3.5725 18.503 1.60772C16.9545 0.672093 15.1899 0.136341 13.313 0.0319396L12.7389 0V0.93502ZM6.22838 1.98138C6.57217 2.08846 6.9503 2.3361 7.14647 2.58261C7.34845 2.83639 8.10571 4.19849 8.27385 4.61038C8.52611 5.22835 8.57663 5.63549 8.43801 5.93252C8.39293 6.02904 7.70451 6.78387 6.88104 7.63967C5.16193 9.42618 5.29446 9.15861 5.63356 10.1591C6.43636 12.5277 7.94136 14.754 9.69281 16.1639C11.1421 17.3305 13.1196 18.314 14.8017 18.7049C14.9075 18.7295 15.0747 18.5712 16.412 17.1805C17.3157 16.2408 17.9755 15.5924 18.0847 15.5366C18.5298 15.3093 19.0168 15.4648 20.565 16.3289C21.4111 16.8012 21.7134 17.0666 21.9283 17.5261C22.1985 18.1042 22.1632 18.7065 21.8182 19.398C21.6664 19.7023 21.5372 19.8717 21.201 20.2073C20.1676 21.2389 18.854 21.8141 16.9565 22.0659C16.24 22.161 14.4568 22.146 13.8636 22.04C11.8558 21.6811 9.95121 20.6988 7.79487 18.9101C7.11807 18.3487 5.48659 16.6944 4.90906 15.9839C3.23957 13.93 2.34182 12.1479 1.97864 10.1663C1.87226 9.58593 1.85698 7.70135 1.95296 7.00233C2.20124 5.19439 2.78524 3.83149 3.72821 2.85947C4.5365 2.02627 5.39948 1.72319 6.22838 1.98138ZM12.7389 4.69058V5.62837L13.1345 5.6588C14.5072 5.76438 15.7273 6.32658 16.703 7.30302C17.6786 8.27945 18.2403 9.50061 18.3458 10.8744L18.3762 11.2703H19.3133H20.2503L20.2173 10.7896C19.9589 7.02133 16.9844 4.04437 13.2192 3.78576L12.7389 3.75274V4.69058ZM12.7389 8.44412V9.3835L12.9902 9.41488C13.3193 9.45606 13.7594 9.66777 14.0248 9.91269C14.287 10.1546 14.5481 10.6605 14.5919 11.0118L14.6242 11.2703H15.5628H16.5014L16.4718 10.9537C16.3634 9.7914 15.7448 8.76614 14.7637 8.1228C14.262 7.79384 13.6775 7.59249 13.0552 7.53433L12.7389 7.50478V8.44412Z"
+                              fill="white" />
+                        </svg>
+                        +7 (888) 888-88-88
+                     </a>
+                     <ul class="social__items" data-da=".menu__list,430,last">
+                        <li class="social__item">
+                           <a class="social__link" href="#" data-hover-link="viber">
+                              <svg class="viber__img" width="25" height="26" viewBox="0 0 25 26" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.8017 0.0186622C18.6175 0.0444129 21.2284 1.93983 21.8745 2.53599C24.02 4.39551 25.2073 8.52109 24.4071 15.0434C23.7011 20.8064 19.6848 21.8274 18.3368 22.1701C18.2046 22.2038 18.0981 22.2308 18.0228 22.2552C17.6584 22.3738 14.4497 23.1764 10.2777 22.8253C9.81733 23.3606 9.20633 24.0609 8.76389 24.5377C8.63053 24.6814 8.50568 24.8233 8.38634 24.959C7.78431 25.6435 7.32262 26.1685 6.61799 25.9497C5.91999 25.7335 5.95901 24.6735 5.95901 24.6735L5.96291 22.0551H5.95706C-0.143143 20.3391 -0.0537953 14.0107 0.0152636 10.6338C0.0843224 7.25697 0.739016 4.53324 2.60009 2.67177C5.9434 -0.394911 12.8017 0.0186622 12.8017 0.0186622ZM12.6945 1.85425C17.6141 1.87571 19.9718 3.35716 20.5181 3.85344C22.3331 5.40746 23.2578 9.12611 22.5816 14.574C21.9927 19.3314 18.8013 20.0754 17.6485 20.3442C17.5206 20.374 17.4178 20.398 17.3464 20.4209C17.0433 20.52 14.2243 21.2196 10.6813 20.9882C10.6813 20.9882 8.04064 24.1739 7.21584 25.0022C7.08708 25.1306 6.9357 25.1829 6.83465 25.1583C6.69419 25.1236 6.65517 24.9554 6.65517 24.7096C6.65752 24.3581 6.6778 20.3585 6.6778 20.3585C1.69088 18.9731 1.80668 13.8918 1.87241 11.0074C1.87467 10.9082 1.87687 10.8117 1.8788 10.718C1.93693 7.89787 2.46716 5.58694 4.04108 4.03292C6.86898 1.4715 12.6945 1.85425 12.6945 1.85425Z"
+                                    fill="#8D7CFF" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.9018 8.43678C12.9113 8.25538 13.066 8.11599 13.2474 8.12545C13.9261 8.16086 14.4908 8.3663 14.8929 8.78212C15.2936 9.19634 15.49 9.77501 15.5244 10.47C15.5334 10.6514 15.3936 10.8058 15.2122 10.8148C15.0308 10.8238 14.8764 10.684 14.8674 10.5026C14.8379 9.90766 14.6747 9.50267 14.4201 9.23944C14.1671 8.9778 13.7809 8.812 13.2131 8.78238C13.0317 8.77291 12.8924 8.61818 12.9018 8.43678Z"
+                                    fill="#8D7CFF" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.4032 6.66478C12.4165 6.48361 12.5741 6.3475 12.7553 6.36076C14.1365 6.46184 15.2482 6.93378 16.058 7.81774L16.0581 7.81787C16.8592 8.69313 17.2399 9.78196 17.2122 11.0591C17.2083 11.2407 17.0579 11.3847 16.8763 11.3808C16.6947 11.3769 16.5506 11.2265 16.5546 11.0449C16.5789 9.91859 16.2477 8.99938 15.5729 8.26197C14.9001 7.52762 13.9596 7.10847 12.7073 7.01682C12.5261 7.00356 12.39 6.84594 12.4032 6.66478Z"
+                                    fill="#8D7CFF" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.8223 4.98043C11.8235 4.79878 11.9718 4.65255 12.1535 4.65382C14.0622 4.66711 15.6756 5.30255 16.971 6.56536C18.2773 7.83872 18.9232 9.57229 18.9396 11.7254C18.941 11.907 18.7949 12.0554 18.6132 12.0568C18.4316 12.0581 18.2832 11.912 18.2818 11.7304C18.2665 9.71283 17.6662 8.16175 16.5118 7.03639C15.3466 5.90048 13.8999 5.32381 12.1489 5.31162C11.9672 5.31035 11.821 5.16207 11.8223 4.98043Z"
+                                    fill="#8D7CFF" />
+                                 <path
+                                    d="M13.2954 14.8916C13.2954 14.8916 13.7577 14.9306 14.0066 14.6239L14.492 14.0133C14.7261 13.7105 15.2911 13.5174 15.8443 13.8256C16.2589 14.0621 16.6614 14.3191 17.0503 14.5958C17.4174 14.8658 18.1693 15.4932 18.1716 15.4932C18.5298 15.7956 18.6125 16.2396 18.3687 16.7078C18.3687 16.7105 18.3667 16.7152 18.3667 16.7175C18.0981 17.1831 17.7572 17.603 17.3566 17.9614C17.3519 17.9637 17.3519 17.966 17.3476 17.9684C16.9996 18.2592 16.6577 18.4245 16.3219 18.4643C16.2724 18.4729 16.2222 18.4761 16.172 18.4736C16.024 18.4751 15.8766 18.4524 15.7358 18.4065L15.7249 18.3905C15.2076 18.2446 14.3437 17.8794 12.9052 17.0858C12.0728 16.632 11.2802 16.1085 10.5361 15.5209C10.1632 15.2265 9.80741 14.911 9.4706 14.5759L9.43471 14.54L9.39881 14.5041L9.36292 14.4682C9.35082 14.4565 9.33912 14.4444 9.32702 14.4323C8.99191 14.0955 8.6764 13.7398 8.38205 13.3668C7.79454 12.6228 7.27103 11.8304 6.81711 10.9981C6.02351 9.55921 5.65832 8.69617 5.5124 8.17803L5.4964 8.1671C5.45066 8.02628 5.42813 7.87896 5.42969 7.7309C5.42695 7.68078 5.42997 7.63051 5.43866 7.58108C5.48054 7.2458 5.6461 6.90363 5.93534 6.55456C5.93768 6.55027 5.94002 6.55027 5.94236 6.54559C6.30065 6.14501 6.72054 5.80415 7.1862 5.53585C7.18854 5.53585 7.19322 5.5335 7.19595 5.5335C7.66415 5.28965 8.10816 5.37237 8.41014 5.72859C8.41248 5.73093 9.03869 6.48277 9.30752 6.84991C9.58423 7.23919 9.84128 7.64209 10.0777 8.05708C10.3859 8.60994 10.1928 9.17607 9.89003 9.40938L9.27942 9.89475C8.9712 10.1437 9.01177 10.606 9.01177 10.606C9.01177 10.606 9.91617 14.0289 13.2954 14.8916Z"
+                                    fill="#8D7CFF" />
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="social__item">
+                           <a class="social__link" href="#" data-hover-link="whatsapp">
+                              <svg class="whatsapp__img" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M0.104053 12.3874C0.103251 14.5708 0.673737 16.7021 1.75807 18.5808L0 25L6.56932 23.2775C8.37926 24.2645 10.4171 24.7848 12.491 24.7855H12.4963C19.3259 24.7855 24.8855 19.2275 24.8884 12.3975C24.8896 9.08713 23.6017 5.97464 21.2622 3.63307C18.9224 1.29159 15.8111 0.00151634 12.4963 0C5.6656 0 0.106771 5.55709 0.104008 12.3874H0.104053ZM4.01613 18.2573L3.7709 17.8679C2.73982 16.2284 2.19549 14.3338 2.19638 12.3883C2.19857 6.71107 6.81883 2.09242 12.5002 2.09242C15.2515 2.09353 17.8372 3.16592 19.7821 5.11209C21.7268 7.05812 22.7969 9.64523 22.7961 12.3966C22.7937 18.074 18.1732 22.6933 12.4964 22.6933H12.4924C10.6438 22.6923 8.83103 22.1961 7.24997 21.2578L6.87368 21.0348L2.97533 22.0568L4.01613 18.2573Z"
+                                    fill="#60D66A" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.39883 7.20874C9.16689 6.69316 8.92273 6.68278 8.70206 6.67373C8.52158 6.66602 8.31494 6.66651 8.10867 6.66651C7.90225 6.66651 7.56675 6.74405 7.28306 7.05389C6.9992 7.36373 6.19922 8.11273 6.19922 9.63614C6.19922 11.1597 7.30886 12.6317 7.46354 12.8385C7.61835 13.045 9.60565 16.271 12.7528 17.5122C15.3684 18.5436 15.9007 18.3384 16.4684 18.2868C17.0361 18.2352 18.3004 17.538 18.5584 16.8149C18.8164 16.092 18.8164 15.4724 18.739 15.3428C18.6616 15.2138 18.4552 15.1364 18.1455 14.9815C17.8358 14.8267 16.3136 14.0775 16.0297 13.9743C15.7458 13.8711 15.5394 13.8195 15.333 14.1294C15.1265 14.4391 14.5335 15.1364 14.3528 15.3429C14.1722 15.5498 13.9916 15.5756 13.6818 15.4207C13.3722 15.2654 12.3749 14.9388 11.1919 13.884C10.2714 13.0633 9.65003 12.0498 9.46929 11.7398C9.28867 11.4301 9.44999 11.2624 9.60529 11.108C9.74432 10.9693 9.915 10.7466 10.0698 10.5658C10.2243 10.385 10.276 10.256 10.3792 10.0495C10.4824 9.84273 10.4308 9.6619 10.3534 9.50709C10.276 9.35223 9.67418 7.82094 9.39883 7.20874Z"
+                                    fill="#60D66A" />
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="social__item">
+                           <a class="social__link" href="#" data-hover-link="vk">
+                              <svg class="vk__img" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="13" cy="13" r="12.1" stroke="#4E6BA4" stroke-width="1.8" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.8284 17.9622H13.7848C13.7848 17.9622 14.0735 17.931 14.221 17.7744C14.3571 17.6302 14.3526 17.36 14.3526 17.36C14.3526 17.36 14.3339 16.0949 14.9294 15.9083C15.5164 15.7245 16.2706 17.131 17.0694 17.6719C17.6739 18.0814 18.1332 17.9917 18.1332 17.9917L20.2698 17.9622C20.2698 17.9622 21.3873 17.8942 20.8574 17.028C20.8139 16.9572 20.5484 16.3868 19.2688 15.2154C17.9287 13.9893 18.1084 14.1876 19.7224 12.0664C20.7048 10.7752 21.0981 9.9864 20.9749 9.64883C20.8579 9.32686 20.1354 9.41209 20.1354 9.41209L17.7293 9.42657C17.7293 9.42657 17.5507 9.40262 17.4186 9.48061C17.2897 9.55692 17.2067 9.73518 17.2067 9.73518C17.2067 9.73518 16.8254 10.7345 16.318 11.5846C15.2469 13.3782 14.8181 13.4729 14.643 13.3615C14.2356 13.1019 14.3373 12.3193 14.3373 11.7628C14.3373 10.0243 14.6051 9.29957 13.817 9.11185C13.5554 9.05001 13.3628 9.00879 12.6939 9.0021C11.8357 8.99319 11.1092 9.00434 10.6979 9.2032C10.4239 9.33522 10.2127 9.62989 10.3415 9.64661C10.5002 9.66777 10.8606 9.74242 11.0516 9.99866C11.2979 10.3295 11.2894 11.0721 11.2894 11.0721C11.2894 11.0721 11.4312 13.1181 10.9584 13.3727C10.6341 13.5465 10.1895 13.1911 9.23416 11.5634C8.74492 10.7301 8.37544 9.80871 8.37544 9.80871C8.37544 9.80871 8.30426 9.63658 8.17715 9.54411C8.02291 9.4327 7.80767 9.39705 7.80767 9.39705L5.52133 9.41209C5.52133 9.41209 5.17841 9.42156 5.05242 9.56862C4.94 9.69952 5.04338 9.97025 5.04338 9.97025C5.04338 9.97025 6.83314 14.0991 8.8596 16.1796C10.7183 18.0875 12.8284 17.9622 12.8284 17.9622Z"
+                                    fill="#4E6BA4" />
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="social__item">
+                           <a class="social__link" href="#" data-hover-link="telegram">
+                              <svg class="telegram__img" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="13" cy="13" r="12.1" stroke="#37AEE2" stroke-width="1.8" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.4576 16.6207C11.9199 17.1108 11.388 17.5922 10.8607 18.0779C10.6763 18.2478 10.4689 18.3416 10.2045 18.3282C10.0244 18.3192 9.92328 18.2443 9.86809 18.0837C9.46455 16.9098 9.05443 15.7379 8.65271 14.5634C8.61357 14.449 8.55462 14.3941 8.43185 14.3589C7.48034 14.0864 6.53073 13.808 5.58234 13.5262C5.44191 13.4845 5.29974 13.4309 5.1779 13.3552C4.96585 13.2234 4.93559 13.014 5.12923 12.8623C5.30815 12.7222 5.52027 12.6048 5.73758 12.5243C6.93989 12.079 8.14832 11.6481 9.35457 11.2121C12.2562 10.1633 15.158 9.11451 18.0594 8.06515C18.6157 7.86399 19.0478 8.14298 18.9957 8.70472C18.9614 9.07502 18.8585 9.4405 18.7759 9.80607C18.1329 12.6515 17.4874 15.4965 16.8427 18.3416C16.8415 18.347 16.8411 18.3527 16.8398 18.3581C16.6821 19.009 16.1772 19.1869 15.6015 18.7902C14.602 18.1014 13.6051 17.4095 12.607 16.7191C12.5598 16.6864 12.511 16.6558 12.4576 16.6207ZM10.2491 17.5168C10.2647 17.45 10.2755 17.4192 10.2786 17.3877C10.342 16.7478 10.4083 16.1082 10.4645 15.4677C10.477 15.3256 10.5222 15.2207 10.6396 15.122C12.1542 13.8487 13.6641 12.5705 15.1752 11.2937C15.6051 10.9304 16.0367 10.569 16.4624 10.2016C16.5071 10.163 16.5168 10.0889 16.5427 10.0312C16.477 10.0138 16.4033 9.96957 16.3471 9.98423C16.2174 10.0181 16.0866 10.0664 15.9728 10.1335C13.7261 11.4569 11.4823 12.7847 9.23549 14.108C9.12118 14.1754 9.08856 14.2308 9.1344 14.3598C9.49016 15.3606 9.83561 16.3647 10.1848 17.3677C10.1985 17.407 10.2178 17.4446 10.2491 17.5168Z"
+                                    fill="#37AEE2" />
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                     <div class="icon-menu__block">
+                        <p class="icon-menu__text">меню</p>
+                        <button type="button" class="icon-menu"><span></span></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header__content">
+               <div class="container">
+                  <div class="header__content-inner">
+                     <div class="title__box">
+                        <h1 class="header__title title  _anim-items  _anim-no-hide"
+                           data-header="Аренда яхт <br> в Крыму и Сочи">
+                           Аренда яхт <br> в Крыму и Сочи
+                        </h1>
+                        <p class="header__description   title__descr   _anim-items  _anim-no-hide  ">
+                           Организуем на борт водные активности, рыбалку, подготовим яхту для мероприятия,
+                           кейтеринг. Мы
+                           сделаем
+                           Ваш отдых ярким и запоминающимся!
+                        </p>
+                     </div>
+                     <div class="header__buttons">
+                        <a class="button__catalog" href="#">Перейти в каталог</a>
+                        <a class="button__selection" href="#" data-popup="#application">Быстрый подбор яхт</a>
+                     </div>
+                     <a class="arrow-down" href="#">
+                        <img class="arrow-down__img" src="images/icons/arrow-bottom.svg" alt="стрелка вниз">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="header__content-slider">
+               <div class="swiper header__slider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide header__slide header__slide-white">
+                     </div>
+                     <div class="swiper-slide header__slide  header__slide-dark">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main class="main">
+
+         <section class="select__city">
+            <div class="container">
+               <div class="title__block">
+                  <h3 class="section__title  city__title   scroll-item">Выберите город</h3>
+               </div>
+               <ul class="city__items">
+                  <li class="city__item">
+                     <a class="city__body" href="#">
+                        <p class="city__name">Крым</p>
+                        <div class="city__pictures">
+                           <img class="city__images" src="images/city-krym.png" alt="">
+                        </div>
+                     </a>
+                  </li>
+                  <li class="city__item">
+                     <a class="city__body" href="#">
+                        <p class="city__name city__name-sochi">Сочи</p>
+                        <div class="city__pictures">
+                           <img class="city__images" src="images/city-sochi.png" alt="">
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+
+         <section class="popular">
+            <div class="container">
+               <div class="title__block  popular-title__block">
+                  <h3 class="section__title  popular__title  scroll-item">Популярные яхты</h3>
+                  <a class="catalog__open" href="#">
+                     Открыть каталог
+                     <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.70711 7.29289C9.09763 7.68342 9.09763 8.31658 8.70711 8.70711L2.34315 15.0711C1.95262 15.4616 1.31946 15.4616 0.928933 15.0711C0.538408 14.6805 0.538408 14.0474 0.928933 13.6569L6.58579 8L0.928932 2.34315C0.538407 1.95262 0.538407 1.31946 0.928932 0.928933C1.31946 0.538408 1.95262 0.538408 2.34315 0.928933L8.70711 7.29289ZM7 7L8 7L8 9L7 9L7 7Z"
+                           fill="#205694" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="popular__inner">
+                  <div class="popular__slider-body">
+                     <div class="swiper popular__slider">
+                        <div class="popular-buttos__box">
+                           <div class="swiper-button-prev   popular-button-prev">
+                              <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="22" cy="22" r="22" fill="#D4E3EC" />
+                                 <path
+                                    d="M17.2929 21.2929C16.9024 21.6834 16.9024 22.3166 17.2929 22.7071L23.6569 29.0711C24.0474 29.4616 24.6805 29.4616 25.0711 29.0711C25.4616 28.6805 25.4616 28.0474 25.0711 27.6569L19.4142 22L25.0711 16.3431C25.4616 15.9526 25.4616 15.3195 25.0711 14.9289C24.6805 14.5384 24.0474 14.5384 23.6569 14.9289L17.2929 21.2929ZM19 21L18 21L18 23L19 23L19 21Z"
+                                    fill="#205694" />
+                              </svg>
+                           </div>
+                           <div class="swiper-button-next   popular-button-next">
+                              <svg class="routes-button-next" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle r="22" transform="matrix(-1 0 0 1 22 22)" fill="#D4E3EC" />
+                                 <path
+                                    d="M26.7071 21.2929C27.0976 21.6834 27.0976 22.3166 26.7071 22.7071L20.3431 29.0711C19.9526 29.4616 19.3195 29.4616 18.9289 29.0711C18.5384 28.6805 18.5384 28.0474 18.9289 27.6569L24.5858 22L18.9289 16.3431C18.5384 15.9526 18.5384 15.3195 18.9289 14.9289C19.3195 14.5384 19.9526 14.5384 20.3431 14.9289L26.7071 21.2929ZM25 21L26 21L26 23L25 23L25 21Z"
+                                    fill="#205694" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__card">
+                                 <a class="popular__slide-pictures-body" href="#">
+                                    <div class="popular__slide-pictures">
+                                       <img class="popular__slide-img" src="images/slider-yachts/6.jpg" alt="">
+                                    </div>
+                                 </a>
+                                 <div class="popular__slide-content">
+                                    <p class="popular__slide-title">Яхта моторная Princess 98</p>
+                                    <div class="popular__slide-info">
+                                       <p class="popular__slide-location">Балаклава</p>
+                                       <p class="popular__slide-passenger-number">8</p>
+                                       <p class="popular__slide-size">15 м</p>
+                                       <p class="popular__slide-class">люкс</p>
+                                    </div>
+                                    <div class="popular__slide-price-box">
+                                       <div class="popular__slide-price">45 000 ₽/час</div>
+                                       <div class="popular__slide-old-price">58 000 ₽/час</div>
+                                    </div>
+                                    <div class="popular__slide-buttons">
+                                       <div class="popular-reservations__btn" data-popup="#reservations">
+                                          Забронировать</div>
+                                       <a class="popular-more__btn" href="#">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__card">
+                                 <a class="popular__slide-pictures-body" href="#">
+                                    <div class="popular__slide-pictures">
+                                       <img class="popular__slide-img" src="images/slider-yachts/6.png" alt="">
+                                    </div>
+                                 </a>
+                                 <div class="popular__slide-content">
+                                    <p class="popular__slide-title">Яхта моторная Diamond</p>
+                                    <div class="popular__slide-info">
+                                       <p class="popular__slide-location">Ялта</p>
+                                       <p class="popular__slide-passenger-number">12</p>
+                                       <p class="popular__slide-size">18 м</p>
+                                       <p class="popular__slide-class">люкс</p>
+                                    </div>
+                                    <div class="popular__slide-price-box">
+                                       <div class="popular__slide-price">50 000 ₽/час</div>
+                                       <div class="popular__slide-old-price">58 000 ₽/час</div>
+                                    </div>
+                                    <div class="popular__slide-buttons">
+                                       <div class="popular-reservations__btn" data-popup="#reservations">
+                                          Забронировать</div>
+                                       <a class="popular-more__btn" href="#">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__card">
+                                 <a class="popular__slide-pictures-body" href="#">
+                                    <div class="popular__slide-pictures">
+                                       <img class="popular__slide-img" src="images/slider-yachts/7.jpg" alt="">
+                                    </div>
+                                 </a>
+                                 <div class="popular__slide-content">
+                                    <p class="popular__slide-title">Яхта моторная Princess</p>
+                                    <div class="popular__slide-info">
+                                       <p class="popular__slide-location">Ялта</p>
+                                       <p class="popular__slide-passenger-number">10</p>
+                                       <p class="popular__slide-size">17 м</p>
+                                       <p class="popular__slide-class">премиум</p>
+                                    </div>
+                                    <div class="popular__slide-price-box">
+                                       <div class="popular__slide-price">55 000 ₽/час</div>
+                                       <div class="popular__slide-old-price">68 000 ₽/час</div>
+                                    </div>
+                                    <div class="popular__slide-buttons">
+                                       <div class="popular-reservations__btn" data-popup="#reservations">
+                                          Забронировать</div>
+                                       <a class="popular-more__btn" href="#">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__card">
+                                 <a class="popular__slide-pictures-body" href="#">
+                                    <div class="popular__slide-pictures">
+                                       <img class="popular__slide-img" src="images/slider-yachts/4.jpg" alt="">
+                                    </div>
+                                 </a>
+                                 <div class="popular__slide-content">
+                                    <p class="popular__slide-title">Яхта моторная Revers 70 </p>
+                                    <div class="popular__slide-info">
+                                       <p class="popular__slide-location">Севатополь</p>
+                                       <p class="popular__slide-passenger-number">6</p>
+                                       <p class="popular__slide-size">12 м</p>
+                                       <p class="popular__slide-class">комфорт</p>
+                                    </div>
+                                    <div class="popular__slide-price-box">
+                                       <div class="popular__slide-price">15 000 ₽/час</div>
+                                       <div class="popular__slide-old-price">18 000 ₽/час</div>
+                                    </div>
+                                    <div class="popular__slide-buttons">
+                                       <div class="popular-reservations__btn" data-popup="#reservations">
+                                          Забронировать</div>
+                                       <a class="popular-more__btn" href="#">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__card">
+                                 <a class="popular__slide-pictures-body" href="#">
+                                    <div class="popular__slide-pictures">
+                                       <img class="popular__slide-img" src="images/slider-yachts/5.jpg" alt="">
+                                    </div>
+                                 </a>
+                                 <div class="popular__slide-content">
+                                    <p class="popular__slide-title">Яхта моторная Java 70</p>
+                                    <div class="popular__slide-info">
+                                       <p class="popular__slide-location">Балаклава</p>
+                                       <p class="popular__slide-passenger-number">8</p>
+                                       <p class="popular__slide-size">16 м</p>
+                                       <p class="popular__slide-class">люкс</p>
+                                    </div>
+                                    <div class="popular__slide-price-box">
+                                       <div class="popular__slide-price">25 000 ₽/час</div>
+                                       <div class="popular__slide-old-price">28 000 ₽/час</div>
+                                    </div>
+                                    <div class="popular__slide-buttons">
+                                       <div class="popular-reservations__btn" data-popup="#reservations">
+                                          Забронировать</div>
+                                       <a class="popular-more__btn" href="#">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="popular-more-yachts__btn" href="#">Смотреть все яхты</a>
+            </div>
+         </section>
+
+         <section class="order">
+            <div class="container">
+               <div class="order__wrapper">
+                  <picture class="order__wrapper-images">
+                     <source srcset="images/palm-mobile-2.png" media="(max-width: 400px)">
+                     <source srcset="images/palm-mobile.png" media="(max-width: 500px)">
+                     <img class="order__wrapper-img order__palm  images__animation  _anim-items  _anim-no-hide"
+                        src="images/palm.png" alt="">
+                  </picture>
+                  <picture class="order__wrapper-images">
+                     <source srcset="images/bird-mobile-2.png" media="(max-width: 400px)">
+                     <source srcset="images/bird-mobile.png" media="(max-width: 920px)">
+                     <img class="order__wrapper-img order__bird  images__animation  _anim-items  _anim-no-hide"
+                        src="images/bird.png" alt="">
+                  </picture>
+                  <div class="title__block order-title__block">
+                     <h3 class="section__title  order__title  scroll-item">Как сделать заказ</h3>
+                     <p class="order__sub-title">
+                        Для того чтобы организовать такую экскурсию, необходимо выполнить
+                        несколько шагов:</p>
+                  </div>
+                  <div class="order__inner">
+                     <ul class="order__items">
+                        <li class="order__item">
+                           <div class="order__item-body">
+                              <div class="order__number yacht__number">
+                                 01
+                              </div>
+                              <div class="order__select">
+                                 Выберите модель яхты
+                              </div>
+                              <div class="order__description">
+                                 В нашем каталоге вы сможете подобрать яхту на ваш вкус. Воспользуйтесь удобной системой
+                                 фильтрации.
+                              </div>
+                           </div>
+                        </li>
+                        <li class="order__item">
+                           <div class="order__item-body">
+                              <div class="order__number data__number">
+                                 02
+                              </div>
+                              <div class="order__select">
+                                 Выберите дату и время
+                              </div>
+                              <div class="order__description">
+                                 Запланируйте вашу поездку с максимальным комфортом.Вы можете арендовать яхту на дневную
+                                 или ночную прогулку.
+                              </div>
+                           </div>
+                        </li>
+                        <li class="order__item">
+                           <div class="order__item-body">
+                              <div class="order__number select__number">
+                                 03
+                              </div>
+                              <div class="order__select">
+                                 Выберите маршрут
+                              </div>
+                              <div class="order__description">
+                                 Ознакомьтесь с нашими захватывающими маршрутами, определитесь с портом отправления.
+                              </div>
+                           </div>
+                        </li>
+                        <li class="order__item">
+                           <div class="order__item-body">
+                              <div class="order__number phone__number">
+                                 04
+                              </div>
+                              <div class="order__select">
+                                 Оставьте заявку
+                              </div>
+                              <div class="order__description">
+                                 Воспользуйте удобной формой заявки. Мы свяжемся с вами в удобном для вас мессенджере
+                                 или по телефону.
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="order__buttons">
+                        <a class="button__catalog" href="#">Перейти в каталог</a>
+                        <a class="button__selection" href="#" data-popup="#application">Быстрый подбор яхт</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="services">
+            <div class="container">
+               <div class="title__block  popular-title__block  services-title__block">
+                  <h3 class="section__title  popular__title services__title  scroll-item">Дополнительные услуги</h3>
+                  <a class="catalog__open" href="#">
+                     Открыть каталог
+                     <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.70711 7.29289C9.09763 7.68342 9.09763 8.31658 8.70711 8.70711L2.34315 15.0711C1.95262 15.4616 1.31946 15.4616 0.928933 15.0711C0.538408 14.6805 0.538408 14.0474 0.928933 13.6569L6.58579 8L0.928932 2.34315C0.538407 1.95262 0.538407 1.31946 0.928932 0.928933C1.31946 0.538408 1.95262 0.538408 2.34315 0.928933L8.70711 7.29289ZM7 7L8 7L8 9L7 9L7 7Z"
+                           fill="#205694" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="services__inner mobile-overflow">
+                  <ul class="services__items">
+                     <li class="services__item">
+                        <a class="services__item-inner" href="#">
+                           <div class="services__item-card">
+                              <div class="services__pictures">
+                                 <img class="services__img" src="images/service-1.jpg" alt="">
+                              </div>
+                              <div class="services__item-body-inner">
+                                 <div class="services__item-body">
+                                    <p class="services__item-title">
+                                       Профессиональный повар
+                                    </p>
+                                    <p class="services__item-text">
+                                       Организуем питание для любого повода и праздника на палубе. Заранее согласуем
+                                       индивидуальное меню и закупим продукты
+                                    </p>
+
+                                 </div>
+                                 <p class="services__item-price">
+                                    10 000 ₽ + продукты
+                                 </p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="services__item">
+                        <a class="services__item-inner" href="#">
+                           <div class="services__item-card">
+                              <div class="services__pictures">
+                                 <img class="services__img" src="images/service-2.jpg" alt="">
+                              </div>
+                              <div class="services__item-body-inner">
+                                 <div class="services__item-body">
+                                    <p class="services__item-title">
+                                       Гидроцикл
+                                    </p>
+                                    <p class="services__item-text">
+                                       Гидроциклы Bombardier GTX на 215 и 260 л.с к вашим услугам. Маски и ласты для
+                                       каждого гостя бесплатно!
+                                    </p>
+
+                                 </div>
+                                 <p class="services__item-price">
+                                    12 000 ₽/час
+                                 </p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="services__item">
+                        <a class="services__item-inner" href="#">
+                           <div class="services__item-card">
+                              <div class="services__pictures">
+                                 <img class="services__img" src="images/service-3.jpg" alt="">
+                              </div>
+                              <div class="services__item-body-inner">
+                                 <div class="services__item-body">
+                                    <p class="services__item-title">
+                                       Морская рыбалка
+                                    </p>
+                                    <p class="services__item-text">
+                                       Рыбалку можно совместить с купанием в открытом море, а если повезет — понаблюдать
+                                       за игрой дельфинов
+                                    </p>
+
+                                 </div>
+                                 <p class="services__item-price">
+                                    Цена зависит от аренды яхты
+                                 </p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+
+         <section class="impressions">
+            <div class="container">
+               <div class="impressions__wrapper">
+                  <picture class="impressions__wrapper-images ">
+                     <source srcset="images/impressions-img-1.3.png" media="(max-width: 1000px)">
+                     <source srcset="images/impressions-img-1.2.png" media="(max-width: 1200px)">
+                     <source srcset="images/impressions-img-1.1.png" media="(max-width: 1300px)">
+                     <img
+                        class="impressions__images impressions__images-star images__animation  _anim-items  _anim-no-hide"
+                        src="images/impressions-img-1.png" alt="">
+                  </picture>
+                  <picture class="impressions__wrapper-images">
+                     <source srcset="images/impressions-img-2.3.png" media="(max-width: 1000px)">
+                     <source srcset="images/impressions-img-2.2.png" media="(max-width: 1200px)">
+                     <source srcset="images/impressions-img-2.1.png" media="(max-width: 1300px)">
+                     <img
+                        class="impressions__images impressions__images-photo images__animation  _anim-items  _anim-no-hide"
+                        src="images/impressions-img-2.png" alt="">
+                  </picture>
+                  <picture class="impressions__wrapper-images">
+
+                     <source srcset="images/impressions-img-3.2.png" media="(max-width: 1000px)">
+                     <source srcset="images/impressions-img-3.1.png" media="(max-width: 1200px)">
+                     <img
+                        class="impressions__images impressions__images-seashell  images__animation  _anim-items  _anim-no-hide"
+                        src="images/impressions-img-3.png" alt="">
+                  </picture>
+                  <picture class="impressions__wrapper-images">
+                     <source srcset="images/impressions-img-4.2.png" media="(max-width: 1100px)">
+                     <source srcset="images/impressions-img-4.1.png" media="(max-width: 1200px)">
+                     <img
+                        class="impressions__images impressions__images-delfin  images__animation  _anim-items  _anim-no-hide"
+                        src="images/impressions-img-4.png" alt="">
+                  </picture>
+                  <div class="impressions__inner">
+                     <div class="title__block impressions-title__block">
+                        <h3 class="section__title  impressions__title  scroll-item">
+                           Незабываемые яркие впечатления
+                        </h3>
+                        <p class="impressions__sub-title">
+                           Бодрящий морской воздух, мерный гул мотора, крики чаек над головой и – невероятные пейзажи,
+                           открывающиеся вокруг… Всё это вы можете ощутить, заказав морскую прогулку у нас!
+                        </p>
+                     </div>
+                     <div class="impressions__content">
+                        <ul class="impressions__items">
+                           <li class="impressions__item">
+                              <div class="impressions__item-box">
+                                 <img class="impressions__item-img" src="images/icons/impressions-yacht-2.svg" alt="">
+                                 <p class="impressions__text">
+                                    Флот из 180 яхт классом от Эконом до Luxury
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="impressions__item">
+                              <div class="impressions__item-box">
+                                 <img class="impressions__item-img" src="images/icons/impressions-org-2.svg" alt="">
+                                 <p class="impressions__text">
+                                    Организуем вечеринки, свадьбы, мальчишники и девичники
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="impressions__item">
+                              <div class="impressions__item-box">
+                                 <img class="impressions__item-img" src="images/icons/impressions-fish-2.svg" alt="">
+                                 <p class="impressions__text">
+                                    Морская рыбалка.
+                                    Снасти – бесплатно
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="impressions__item">
+                              <div class="impressions__item-box">
+                                 <img class="impressions__item-img" src="images/icons/impressions-ind-2.svg" alt="">
+                                 <p class="impressions__text">
+                                    Индивидуальные морские прогулки своей компанией
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="impressions__item">
+                              <div class="impressions__item-box">
+                                 <img class="impressions__item-img" src="images/icons/impressions-user-2.svg" alt="">
+                                 <p class="impressions__text">
+                                    Выездной профессиональный повар на яхте
+                                 </p>
+                              </div>
+                           </li>
+                        </ul>
+                        <div class="impressions__pictures">
+                           <img class="impressions__img" src="images/impressions-pictures.jpg" alt="">
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="routes">
+            <div class="container">
+               <div class="title__block popular-title__block  routes-title__block">
+                  <h3 class="section__title  routes__title  scroll-item">Популярные маршруты</h3>
+                  <a class="catalog__open" href="#">
+                     Все маршруты
+                     <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.70711 7.29289C9.09763 7.68342 9.09763 8.31658 8.70711 8.70711L2.34315 15.0711C1.95262 15.4616 1.31946 15.4616 0.928933 15.0711C0.538408 14.6805 0.538408 14.0474 0.928933 13.6569L6.58579 8L0.928932 2.34315C0.538407 1.95262 0.538407 1.31946 0.928932 0.928933C1.31946 0.538408 1.95262 0.538408 2.34315 0.928933L8.70711 7.29289ZM7 7L8 7L8 9L7 9L7 7Z"
+                           fill="#205694" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="routes__slider-body">
+                  <div class="swiper routes__slider">
+                     <div class="routes-buttos__box">
+                        <div class="swiper-button-prev   routes-button-prev">
+                           <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="22" cy="22" r="22" fill="#D4E3EC" />
+                              <path
+                                 d="M17.2929 21.2929C16.9024 21.6834 16.9024 22.3166 17.2929 22.7071L23.6569 29.0711C24.0474 29.4616 24.6805 29.4616 25.0711 29.0711C25.4616 28.6805 25.4616 28.0474 25.0711 27.6569L19.4142 22L25.0711 16.3431C25.4616 15.9526 25.4616 15.3195 25.0711 14.9289C24.6805 14.5384 24.0474 14.5384 23.6569 14.9289L17.2929 21.2929ZM19 21L18 21L18 23L19 23L19 21Z"
+                                 fill="#205694" />
+                           </svg>
+                        </div>
+                        <div class="swiper-button-next   routes-button-next">
+                           <svg class="routes-button-next" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <circle r="22" transform="matrix(-1 0 0 1 22 22)" fill="#D4E3EC" />
+                              <path
+                                 d="M26.7071 21.2929C27.0976 21.6834 27.0976 22.3166 26.7071 22.7071L20.3431 29.0711C19.9526 29.4616 19.3195 29.4616 18.9289 29.0711C18.5384 28.6805 18.5384 28.0474 18.9289 27.6569L24.5858 22L18.9289 16.3431C18.5384 15.9526 18.5384 15.3195 18.9289 14.9289C19.3195 14.5384 19.9526 14.5384 20.3431 14.9289L26.7071 21.2929ZM25 21L26 21L26 23L25 23L25 21Z"
+                                 fill="#205694" />
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="swiper-wrapper routes__wrapper">
+                        <div class="swiper-slide routes__slide">
+                           <div class="routes__item">
+                              <div class="routes__card">
+                                 <a class="routes__card-pictures" href="#">
+                                    <img class="routes__card-img" src="images/slider-routes/routes-2.jpg" alt="">
+                                 </a>
+                                 <div class="routes__card-content-body">
+                                    <a class="routes__card-title" href="#">
+                                       Маршрут из Балаклавы №1
+                                    </a>
+                                    <div class="routes__text-block">
+                                       <ol class="routes__card-list">
+                                          <li class="routes__card-list-text">
+                                             Васили пляж
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Мыс Фиолент
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Грот Дианы
+                                          </li>
+                                       </ol>
+                                    </div>
+                                    <div class="routes__card-info-box">
+                                       <p class="routes__card-info-text routes__card-time">
+                                          <b class="card-info-text__bold">В пути:</b> 3 часа
+                                       </p>
+                                       <p class="routes__card-info-text routes__card-entertainment">
+                                          <b class="card-info-text__bold">Развлечения:</b> купание, стоянки в
+                                          живописных
+                                          местах
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide routes__slide">
+                           <div class="routes__item">
+                              <div class="routes__card">
+                                 <a class="routes__card-pictures" href="#">
+                                    <img class="routes__card-img" src="images/slider-routes/routes-2.png" alt="">
+                                 </a>
+                                 <div class="routes__card-content-body">
+                                    <a class="routes__card-title" href="#">
+                                       Маршрут из Балаклавы №2
+                                    </a>
+                                    <div class="routes__text-block">
+                                       <ol class="routes__card-list">
+                                          <li class="routes__card-list-text">
+                                             Бухта Казачья
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             35-я береговая батарея
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Пляж Баунти
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             грот Дианы
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Мыс Фиолент
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Свято-Георгиевский монастырь
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Пляж Васили
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Балаклава
+                                          </li>
+                                       </ol>
+                                    </div>
+                                    <div class="routes__card-info-box">
+                                       <p class="routes__card-info-text routes__card-time">
+                                          <b class="card-info-text__bold">В пути:</b> 6-8 часов
+                                       </p>
+                                       <p class="routes__card-info-text routes__card-entertainment">
+                                          <b class="card-info-text__bold">Развлечения:</b> купание, стоянки в
+                                          живописных
+                                          местах
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide routes__slide">
+                           <div class="routes__item">
+                              <div class="routes__card">
+                                 <a class="routes__card-pictures" href="#">
+                                    <img class="routes__card-img" src="images/slider-routes/routes-3.jpg" alt="">
+                                 </a>
+                                 <div class="routes__card-content-body">
+                                    <a class="routes__card-title" href="#">
+                                       Маршрут из Балаклавы №3
+                                    </a>
+                                    <div class="routes__text-block">
+                                       <ol class="routes__card-list">
+                                          <li class="routes__card-list-text">
+                                             Бочка Смерти
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Пляж Серебряный и Золотой
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Пляж Инжир
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Мыс Айя
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Горный "Затерянный мир"
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Бухта Ласли
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Устричная ферма
+                                          </li>
+                                       </ol>
+                                    </div>
+                                    <div class="routes__card-info-box">
+                                       <p class="routes__card-info-text routes__card-time">
+                                          <b class="card-info-text__bold">В пути:</b> 3-4 часа
+                                       </p>
+                                       <p class="routes__card-info-text routes__card-entertainment">
+                                          <b class="card-info-text__bold">Развлечения:</b> купание, стоянки в
+                                          живописных
+                                          местах
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide routes__slide">
+                           <div class="routes__item">
+                              <div class="routes__card">
+                                 <a class="routes__card-pictures" href="#">
+                                    <img class="routes__card-img" src="images/slider-routes/routes-4.png" alt="">
+                                 </a>
+                                 <div class="routes__card-content-body">
+                                    <a class="routes__card-title" href="#">
+                                       Маршрут из Балаклавы №4
+                                    </a>
+                                    <div class="routes__text-block">
+                                       <ol class="routes__card-list">
+                                          <li class="routes__card-list-text">
+                                             Васили пляж
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Мыс Фолент
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Грот Дианы
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Пляж Баунти
+                                          </li>
+                                       </ol>
+                                    </div>
+                                    <div class="routes__card-info-box">
+                                       <p class="routes__card-info-text routes__card-time">
+                                          <b class="card-info-text__bold">В пути:</b>4 часа
+                                       </p>
+                                       <p class="routes__card-info-text routes__card-entertainment">
+                                          <b class="card-info-text__bold">Развлечения:</b> купание, стоянки в
+                                          живописных
+                                          местах
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide routes__slide">
+                           <div class="routes__item">
+                              <div class="routes__card">
+                                 <a class="routes__card-pictures" href="#">
+                                    <img class="routes__card-img" src="images/slider-routes/routes-5.png" alt="">
+                                 </a>
+                                 <div class="routes__card-content-body">
+                                    <a class="routes__card-title" href="#">
+                                       Маршрут из Балаклавы №5
+                                    </a>
+                                    <div class="routes__text-block">
+                                       <ol class="routes__card-list">
+                                          <li class="routes__card-list-text">
+                                             Мыс Айя
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Бухта Ласли
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Кацивелли
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             гора Кошка
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Семеиз
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             .Воронцовский дворец
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Ласточка
+                                          </li>
+                                          <li class="routes__card-list-text">
+                                             Ялта
+                                          </li>
+                                       </ol>
+                                    </div>
+                                    <div class="routes__card-info-box">
+                                       <p class="routes__card-info-text routes__card-time">
+                                          <b class="card-info-text__bold">В пути:</b>4-6 часов
+                                       </p>
+                                       <p class="routes__card-info-text routes__card-entertainment">
+                                          <b class="card-info-text__bold">Развлечения:</b> купание, стоянки в
+                                          живописных
+                                          местах
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="questions">
+            <div class="container">
+               <div class="title__block popular-title__block  questions-title__block">
+                  <h3 class="section__title  questions__title  scroll-item">Ответы на часто задаваемые вопросы</h3>
+               </div>
+               <div class="questions__inner">
+                  <ul class="questions__items">
+                     <li class="questions__item">
+                        <div class="questions__item-body block" data-spollers=",max">
+                           <button type="button" class="questions__block-title  block__title" data-spoller>
+                              Что взять с собой на борт?
+                              <svg class="questions__block-img" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle r="22" transform="matrix(-1 0 0 1 22 22)" fill="#205694" />
+
+                              </svg>
+                           </button>
+                           <div class="questions__item-text">
+                              На борт рекомендуем взять полотенца, купальные принадлежности, солнцезащитный крем и очки,
+                              кепку или шляпу. Из продуктов можно взять воду и легкие закуски. Красное вино, красные
+                              соки и красные фрукты окрашивают палубу, поэтому их лучше оставить дома.
+                           </div>
+                        </div>
+                     </li>
+                     <li class="questions__item">
+                        <div class="questions__item-body block" data-spollers=",max">
+                           <button type="button" class="questions__block-title  block__title" data-spoller>
+                              В море может укачать?
+                              <svg class="questions__block-img" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle r="22" transform="matrix(-1 0 0 1 22 22)" fill="#205694" />
+                              </svg>
+                           </button>
+                           <div class="questions__item-text">
+                              Если у Вас имеется морская болезнь, то укачает даже в очень спокойном море. Если в
+                              автомобиле или в самолете Вас не укачивает, на море может укачать. Поэтому, чтобы ваше
+                              мероприятие прошло идеально, мы обязательно рекомендуем нашим гостям за 1-2 часа перед
+                              отправлением в море выпить таблетки от укачивания.
+                           </div>
+                        </div>
+                     </li>
+                     <li class="questions__item">
+                        <div class="questions__item-body block" data-spollers=",max">
+                           <button type="button" class="questions__block-title  block__title" data-spoller>
+                              Можно снять яхту без капитана?
+                              <svg class="questions__block-img" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle r="22" transform="matrix(-1 0 0 1 22 22)" fill="#205694" />
+
+                              </svg>
+                           </button>
+                           <div class="questions__item-text">
+                              Взять яхту на прокат можно только с капитаном. Цены и условия проката указаны на странице
+                              каждой яхты и на странице условия. Минимальная длительность проката зависит от модели
+                              катера или яхты и составляет от 3 часов.
+                           </div>
+                        </div>
+                     </li>
+                     <li class="questions__item">
+                        <div class="questions__item-body block" data-spollers=",max">
+                           <button type="button" class="questions__block-title  block__title" data-spoller>
+                              Какие маршруты доступны?
+                              <svg class="questions__block-img" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle r="22" transform="matrix(-1 0 0 1 22 22)" fill="#205694" />
+                              </svg>
+                           </button>
+                           <div class="questions__item-text">
+                              У нас доступно множество разнообразных программ и маршрутов на роскошных судах различных
+                              классов.
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+
+      </main>
+
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <div class="footer__body">
+                  <a class="logo footer__logo" href="#">
+                     <img class="logo__img  footer-logo__img " src="images/logo.svg" alt="логотип">
+                  </a>
+                  <div class="footer__address-box">
+                     <p class="footer__address-text">Крым, Балаклава, наб. Грибоедова, 9а</p>
+                     <p class="footer__address-text">Крым, Ялта, ул. Морская, 5</p>
+                     <p class="footer__address-text">Сочи, ул. Мытнинская, 1</p>
+                  </div>
+                  <div class="footer__address-box-mobile" data-da=".menu__list,430,last">
+                     <p class="footer__address-text">Крым, Балаклава, наб. Грибоедова, 9а</p>
+                     <p class="footer__address-text">Крым, Ялта, ул. Морская, 5</p>
+                     <p class="footer__address-text">Сочи, ул. Мытнинская, 1</p>
+                  </div>
+                  <div class="footer__policy-box">
+                     <p class="footer__policy-text">LUX TRIPS 2022</p>
+                     <p class="footer__policy-text">© Все права защищены</p>
+                     <p class="footer__policy-text">
+                        <a class="footer__policy-link" href="#">
+                           Политика конфиденциальности
+                        </a>
+                     </p>
+                  </div>
+                  <div class="footer__contacts-box">
+                     <a class="header__phone  footer__phone " href="tel:78888888888">+7 (888) 888-88-88</a>
+                     <ul class="social__items footer-social__items">
+                        <li class="social__item footer-social__item">
+                           <a class="social__link  footer-social__link " href="#">
+                              <img class="social__images footer-social__images" src="images/icons/viber.svg" alt="">
+                           </a>
+                        </li>
+                        <li class="social__item footer-social__item">
+                           <a class="social__link footer-social__link" href="#">
+                              <img class="social__images footer-social__images" src="images/icons/whatsapp.svg" alt="">
+                           </a>
+                        </li>
+                        <li class="social__item footer-social__item">
+                           <a class="social__link footer-social__link" href="#">
+                              <img class="social__images footer-social__images" src="images/icons/vk.svg" alt="">
+                           </a>
+                        </li>
+                        <li class="social__item footer-social__item">
+                           <a class="social__link footer-social__link" href="#">
+                              <img class="social__images footer-social__images" src="images/icons/telegram.svg" alt="">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+   </div>
+
+
+
+   <div class="hystmodal" id="application" aria-hidden="true">
+      <div class="hystmodal__wrap">
+         <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Закрыть</button>
+            <div class="popup__application-body">
+               <form class="popup__application-form" action="#">
+                  <p class="popup__application-title">
+                     Оставить заявку
+                  </p>
+                  <p class="popup__application-text">
+                     Выберите удобный способ для связи, и мы свяжемся с Вами в течение 10 минут
+                  </p>
+                  <div class="application-form__body">
+                     <img class="application-form__img" src="images/form-bird-bg.png" alt="">
+                     <div class="radio-btn__inner">
+                        <div class="radio-btn__box">
+                           <label>
+                              <input class="input__base-box" type="radio" value="Whatsapp" name="communication" checked>
+                              <span class="radio-style"></span>
+                              <span class="radio__title "> Whatsapp </span>
+                           </label>
+                        </div>
+                        <div class="radio-btn__box">
+                           <label>
+                              <input class="input__base-box" type="radio" value="Telegram" name="communication">
+                              <span class="radio-style"></span>
+                              <span class="radio__title "> Telegram</span>
+                           </label>
+                        </div>
+                        <div class="radio-btn__box">
+                           <label>
+                              <input class="input__base-box" type="radio" value="Viber" name="communication">
+                              <span class="radio-style"></span>
+                              <span class="radio__title "> Viber</span>
+                           </label>
+                        </div>
+                        <div class="radio-btn__box">
+                           <label>
+                              <input class="input__base-box" type="radio" value="Phone" name="communication">
+                              <span class="radio-style"></span>
+                              <span class="radio__title "> По телефону</span>
+                           </label>
+                        </div>
+                     </div>
+                     <input class="application__input application__input-name" type="text" required minlength="3"
+                        placeholder="Ваше имя">
+                     <input class="application__input application__input-phone" type="tel" required
+                        placeholder="Ваш телефон">
+                     <button class="application__btn" type="submit">Отправить</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="hystmodal" id="reservations" aria-hidden="true">
+      <div class="hystmodal__wrap">
+         <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close hystmodal__close-reservations">Закрыть</button>
+            <div class="popup-reservations__body">
+               <form class="popup__reservations-form" action="#">
+                  <p class="popup__reservations-title">
+                     Бронирование яхты
+                  </p>
+                  <div class="reservations-form__body">
+                     <select class="multi-default yacht-select " name="yacht">
+                        <option class="yacht-option" value=""> Выберите яхту </option>
+                        <option class="yacht-option" value="2">Яхта моторная Princess 98</option>
+                        <option class="yacht-option" value="3">Яхта моторная Diamond</option>
+                        <option class="yacht-option" value="4">Яхта моторная Princess</option>
+                        <option class="yacht-option" value="5">Яхта моторная Revers 70</option>
+                        <option class="yacht-option" value="6">Яхта моторная Java 70</option>
+                     </select>
+                     <select class="multi-default time-select " name="time">
+                        <option class="time-option" value=""> На какое время планируете выйти в море?</option>
+                        <option class="time-option" value="3">2 часа</option>
+                        <option class="time-option" value="4">3 часа</option>
+                        <option class="time-option" value="5">4 часа</option>
+                        <option class="time-option" value="6">5 часов</option>
+                        <option class="time-option" value="7">6 часов</option>
+                        <option class="time-option" value="8">Более 6 часов</option>
+                     </select>
+                     <div class="reservations__input-box">
+                        <input class="input__number" type="number" min="1" max="100" placeholder="Количество человек">
+                        <input class="input__data" type="text" placeholder="Планируемая дата">
+                        <svg class="img-input__data" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M3.78713 0.111359C3.63494 0.190789 3.54587 0.272407 3.46004 0.410989L3.34214 0.601417L3.32932 1.55207L3.31649 2.50269L2.78187 2.50335C2.1242 2.50421 1.81114 2.56641 1.36995 2.78403C0.723613 3.10277 0.203544 3.77298 0.0571421 4.47573C0.0086153 4.70887 0.000208165 5.70906 0.000208165 11.2544C0.000208165 18.5167 -0.0177792 18.0436 0.280655 18.6387C0.565129 19.206 1.07456 19.6442 1.72582 19.8819L2.01264 19.9866L9.88192 19.9969C18.6775 20.0085 18.0461 20.0281 18.6488 19.7249C19.2313 19.4319 19.7121 18.8629 19.9133 18.2284L20 17.9549V11.2544V4.55387L19.9133 4.28038C19.7117 3.64471 19.2305 3.0744 18.6509 2.78427C18.218 2.56755 17.8991 2.50421 17.2365 2.50335L16.7019 2.50269L16.6891 1.55207L16.6763 0.601417L16.5584 0.410989C16.4725 0.272407 16.3834 0.190789 16.2313 0.111359C16.0295 0.00606521 16.0014 0.00219727 15.4388 0.00219727C14.8021 0.00219727 14.6576 0.035446 14.4536 0.228922C14.2062 0.463499 14.1932 0.530114 14.1932 1.56344V2.50269H10.0092H5.82518V1.58329C5.82518 0.583132 5.80833 0.484792 5.59827 0.260998C5.39333 0.0426349 5.242 0.00399449 4.58812 0.00305681C4.01538 0.00223634 3.98953 0.00571358 3.78713 0.111359ZM18.3288 13.0843L18.3186 17.8053L18.2117 17.9583C18.1529 18.0424 18.0398 18.1552 17.9604 18.2089L17.816 18.3066H10.0087H2.20147L2.04842 18.1998C1.96423 18.141 1.85134 18.028 1.79758 17.9487L1.69982 17.8044L1.68957 13.0838L1.67933 8.36322H10.0092H18.3391L18.3288 13.0843Z"
+                              fill="#205694" />
+                        </svg>
+                     </div>
+                     <div class="reservations__check-box-block">
+                        <label class="chef__label">
+                           <input class="chef__chekbox" type="checkbox">
+                           <span class="chef__chekbox-style"></span>
+                           <span class="reservations__chef-title">
+                              Услуги профессионального повара ( + 10 000 ₽ )
+                           </span>
+                        </label>
+                        <label class="jet-ski__label">
+                           <input class="jet-ski__chekbox" type="checkbox">
+                           <span class="jet-ski__chekbox-style"></span>
+                           <span class="reservations__jet-ski-title">
+                              Гидроцикл ( + 12 000 ₽/час )
+                           </span>
+                        </label>
+                     </div>
+
+                     <div class="reservations__contacts-box">
+                        <input class="input__contacts-name" type="text" placeholder="Ваше имя">
+                        <input class="input__contacts-phone" type="tel" placeholder="Ваш телефон">
+                     </div>
+                     <button class="reservations__btn" type="submit">Отправить</button>
+                  </div>
+
+
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/hystmodal.min.js"></script>
+   <script src="js/inputmask.min.js"></script>
+   <script src="js/choices.min.js"></script>
+   <script src="js/air-datepicker.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>
